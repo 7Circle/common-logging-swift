@@ -1,3 +1,3 @@
-# Zero12CommonLogging
+# Zero12 - CommonLogging
 
-A description of this package.
+A package for writing interpolated string messages to the unified logging system.
