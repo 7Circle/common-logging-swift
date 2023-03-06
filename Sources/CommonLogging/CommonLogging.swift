@@ -5,7 +5,6 @@
 // {======|_| """ |_|"""""|_|"""""|_|"""""|___|""""""|
 //./o--000'"`-0-0-'"`-0-0-'"`-0-0-'"`-0-0-'"""`-0--0-'
 
-import Foundation
 import os
 
 public struct CommonLogging<E: RawRepresentable> {
