@@ -3,14 +3,13 @@
 # Zero12 Common Logging
 
 Common Logging is a small Swift library created by the [zero12](https://www.zero12.it/) Mobile Team to
-standardize the way that logs are used in the app.
+standardize the way that logs are used in the app using the unified logging system.
 
 # Overview
 
 Common Logging helps to use a single way to log information and errors in Swift applications. Even if
-it is just a wrapper around OS Logger, the initialization of the logger instance requires an
-enum of all the categories of the app. In this way the developer is forced to categorize every
-message sent to the console.
+it is a wrapper on OS Logger, the initialization of the logger instance requires an enum of all the
+ categories of the app. In this way the developer is forced to categorize every message sent to the console.
 
 ## Quick start
 
