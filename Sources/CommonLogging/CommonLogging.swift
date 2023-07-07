@@ -7,15 +7,15 @@
 
 import os
 
+/// Wrapper for OS Logger that helps to standardize the way logs are printed.
 public struct CommonLogging<E: RawRepresentable> {
     private let logger: Logger
     public typealias AppLogger = os.Logger
 
-
     /// Creates a logger for logging to the default subsystem.
     ///
     ///- Parameters:
-    ///     - logger: logger for logging to the default subsystem
+    ///     - logger: logger for logging to the default subsystem, if not passed the default os Logger is used.
     public init(logger: Logger = Logger()) {
         self.logger = logger
     }
@@ -42,8 +42,8 @@ public struct CommonLogging<E: RawRepresentable> {
     /// to the interpolations. These are optional arguments. When not specified, they will be set to their
     /// default values.
     ///
-    ///     commonLoggin.logInfo(.testEnviroment, "An unsigned integer \(x, format: .hex, align: .right(columns: 10))")
-    ///     commonLoggin.logInfo(.testEnviroment, "An unsigned integer \(x, privacy: .private)")
+    ///     logger.logInfo(.testEnviroment, "An unsigned integer \(x, format: .hex, align: .right(columns: 10))")
+    ///     logger.logInfo(.testEnviroment, "An unsigned integer \(x, privacy: .private)")
     ///
     /// - Warning: Do not explicity create OSLogMessage. Instead pass a string interpolation.
     ///
