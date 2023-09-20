@@ -1,8 +1,8 @@
-<img alt="logo image" src="https://s3.eu-west-1.amazonaws.com/it.zero12.common-libraries/zero12-common-logging.jpg" width="653"/>
+<img alt="logo image" src="https://s3.eu-west-1.amazonaws.com/it.zero12.common-libraries/digitalcloud-common-logging.jpeg" width="653"/>
 
-# Zero12 Common Logging
+# Digital Cloud Common Logging
 
-Common Logging is a small Swift library created by the [zero12](https://www.zero12.it/) Mobile Team to
+Common Logging is a small Swift library created by the *Digital Cloud* Mobile Team to
 standardize the way that logs are used in the app using the unified logging system.
 
 # Overview
@@ -38,14 +38,14 @@ To log messages can be used the `logInfo` and `logError` functions.
 
 You can add Common Logging to an Xcode project by adding it to your project as a package.
 
-> https://github.com/zero12srl/zero12-common-logging
+> https://github.com/Digital-Cloud-Labs/common-logging-swift.git
 
 You can add Common Logging in a [SwiftPM](https://swift.org/package-manager/) project by adding
 it to the `Package.swift`:
 
 ``` swift
 dependencies: [
-  .package(url: "https://github.com/zero12srl/zero12-common-logging", .upToNextMajor(from: "1.0.0"))
+  .package(url: "https://github.com/Digital-Cloud-Labs/common-logging-swift.git", .upToNextMajor(from: "1.0.0"))
 ]
 ```
 
@@ -65,5 +65,5 @@ This library is released under the MIT license. See [LICENSE](LICENSE) for detai
 
 ## About
 
-Made with ❤️ by zero12. 
-The names and logo are trademarks of zero12 srl.
+Made with ❤️ by Digital Cloud. 
+The names and logo are trademarks of Digital Cloud srl.
