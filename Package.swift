@@ -15,7 +15,8 @@ let package = Package(
     targets: [
         .target(
             name: "CommonLogging",
-            dependencies: []),
+            dependencies: [],
+            resources: [.copy("Resources/PrivacyInfo.xcprivacy")]),
         .testTarget(
             name: "CommonLoggingTests",
             dependencies: ["CommonLogging"]),
