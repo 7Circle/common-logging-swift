@@ -8,7 +8,7 @@
 import os
 
 /// Wrapper for OS Logger that helps to standardize the way logs are printed.
-public struct CommonLogging<E: RawRepresentable> {
+public struct CommonLogging<E: RawRepresentable & Sendable>: Sendable {
     private let logger: Logger
     public typealias AppLogger = os.Logger
 
