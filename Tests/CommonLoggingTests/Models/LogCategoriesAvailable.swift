@@ -7,6 +7,6 @@
 
 import Foundation
 
-public enum LogCategoryTestModel: String {
+public enum LogCategoryTestModel: String, Sendable {
     case testEnviroment = "Test Enviroment"
 }
